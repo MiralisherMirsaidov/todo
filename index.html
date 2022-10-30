@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <section class="d-flex">
+        <div class="left text-center shadow">
+            <div class="logo mt-5">
+                <img src="./img/logo.png" alt="">
+            </div>
+            <div class="menu-left mt-5 me-2">
+                <ul class="list-unstyled ms-5 ps-3">
+                    <li class="d-flex align-content-center menutext mb-2">
+                        <i class="fa-solid fa-key mt-2 me-3"></i>
+                        <h4>Dashboard</h4>
+                    </li>
+                    <li class="d-flex align-content-center menutext mb-2">
+                        <i class="fa-solid fa-layer-group mt-2 me-3 "></i>
+                        <h4>Guruhlar</h4>
+                        <i class="fa-sharp fa-solid fa-chevron-right mt-2 ms-5 ps-2 next"></i>
+                    </li>
+                    <li class="d-flex align-content-center menutext mb-2">
+                        <i class="fa-solid fa-user mt-2 me-3"></i>
+                        <h4>O’quvchilar</h4>
+                        <i class="fa-sharp fa-solid fa-chevron-right mt-2 ms-4 ps-2 "></i>
+                    </li>
+                    <li class="d-flex align-content-center menutext mb-2">
+                        <i class="fa-solid fa-money-check-dollar mt-2 me-3"></i>
+                        <h4>Bug’alteriya</h4>
+                        <i class="fa-sharp fa-solid fa-chevron-right mt-2 ms-4"></i>
+                    </li>
+                    <li class="d-flex align-content-center menutext mb-2">
+                        <i class="fa-solid fa-gear mt-2 me-3"></i>
+                        <h4>Sozlamalar</h4>
+                        <i class="fa-sharp fa-solid fa-chevron-right mt-2 ms-4 ps-2"></i>
+                    </li>
+                    <li class="d-flex align-content-center menutext mb-2">
+                        <i class="fa-solid fa-question mt-2 me-3"></i>
+                        <h4>Yordam</h4>
+                        <i class="fa-sharp fa-solid fa-chevron-right mt-2 ms-5 ps-4"></i>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container main mt-4 ms-2">
+            <div class="navbar mt-1 d-flex align-content-center">
+                <div class="d-flex align-content-center">
+                    <h2>Hello Alisher</h2>
+                    <i class="fa-sharp fa-solid fa-hand fs-3 mt-1 ms-2"></i>
+                </div>
+
+                <div class="d-flex align-content-center">
+                    <i class="fa-regular fa-moon fs-3 pe-3"></i>
+                    <i class="fa-solid fa-circle-plus fs-3 pe-3" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop"></i>
+                    <i class="fa-regular fa-bell fs-3 pe-3"></i>
+                    <div class="">
+                        <input type="text" oninput="search(this)" placeholder="Qidiruv"
+                            class="form-control w-100 shadow ps-4">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel">O’quvchi yaratish</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="mb-3">
+                                <h3>F.I.O</h3>
+                                <input type="text" class="form-control ism" placeholder="Ism Familoya">
+                            </div>
+                            <div class="mb-3">
+                                <h3>Ro’yxatga olingan sana</h3>
+                                <input type="date" class="form-control sana" name="birthday">
+                            </div>
+                            <div class="mb-3">
+                                <h3>Guruh nomi</h3>
+                                <select name="" class="form-control guruh" id="">
+                                    <option selected disabled>Guruhni tanlang</option>
+                                    <option value="Frontend 010">Frontend 010</option>
+                                    <option value="Frontend 011">Frontend 011</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <h3>To'lov</h3>
+                                <select name="" class="form-control tolov" id="">
+                                    <option selected disabled value="To'langan">To'lov ma'lumoti</option>
+                                    <option value="To'langan">To'langan</option>
+                                    <option value="To'lanmagan">To'lanmagan</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <h3>Email</h3>
+                                <input type="email" class="form-control email" placeholder="Email">
+                            </div>
+                            <div class="d-flex">
+                                <input type="radio" id="html" name="fav_language" class="me-2 erkak" value="Erkak">
+                                <label class="me-2" for="html">Erkak</label><br>
+                                <input type="radio" id="css" name="fav_language" class="me-2 ayol" value="Ayol">
+                                <label class="me-2" for="css">Ayol</label><br>
+                            </div>
+                            <div class="mb-3">
+                                <h3>Telefon nomer</h3>
+                                <input type="phone" class="form-control telefon" placeholder="Nomer ">
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" onclick="addUsers()"
+                                data-bs-dismiss="modal">Saqlash</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section class="pt-5">
+                <div class="row pt-5 bg-white roundedrow mx-1 pb-3 d-flex align-content-center">
+                    <div class="col-3">
+                        <div class="d-flex">
+                            <div class="pe-3">
+                                <img src="./img/img nav icon/guruh.png" class="img-fluid" alt="">
+                            </div>
+                            <div>
+                                <p class="info mb-0">Hamma o’quvchilar</p>
+                                <h1>125 ta</h1>
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-arrow-up text-success me-2 mt-1"></i>
+                                    <p> <span class="text-success fw-bold">16%</span> Oylik</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-flex">
+                            <div class="pe-3">
+                                <img src="./img/img nav icon/user.png" class="img-fluid" alt="">
+                            </div>
+                            <div class="pb-4 mb-2">
+                                <p class="info mb-0">Bitirgan o’quvchilar</p>
+                                <h1>61 ta</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-flex">
+                            <div class="pe-3">
+                                <img src="./img/img nav icon/user pink.png" class="img-fluid" alt="">
+                            </div>
+                            <div>
+                                <p class="info mb-0">Ketgan O’quvchilar</p>
+                                <h1>10 ta</h1>
+                                <div class="d-flex">
+                                    <i class="fa-solid fa-arrow-down text-danger me-2 mt-1"></i>
+                                    <p> <span class="text-danger fw-bold">1%</span> Oylik</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="d-flex">
+                            <div class="pe-3">
+                                <img src="./img/img nav icon/laptop.png" class="img-fluid" alt="">
+                            </div>
+                            <div>
+                                <p class="info mb-0">Faol o’quvchilar</p>
+                                <h1>54 ta</h1>
+                                <div class="d-flex position-relative">
+                                    <img src="./img/img users/Ellipse 58.png" class="rasm1" alt="">
+                                    <img src="./img/img users/Ellipse 59.png" class="rasm2" alt="">
+                                    <img src="./img/img users/Ellipse 60.png" class="rasm3" alt="">
+                                    <img src="./img/img users/Ellipse 61.png" class="rasm4" alt="">
+                                    <img src="./img/img users/Ellipse 62.png" class="rasm5" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="py-5">
+                <div class="box bg-white p-3">
+                    <div class="start d-flex justify-content-between">
+                        <div>
+                            <h3 class="fw-bold">Hamma O’quvchilar</h3>
+                            <h5 class="text-success">Faol o’quvchilar</h5>
+                        </div>
+                        <div class="position-relative d-flex">
+                            <input type="text" oninput="search(this)" class="ps-5 pe-5 me-3 form-control"
+                                placeholder="Qidiruv">
+                            <i class="fa-solid fa-magnifying-glass aykonsearch fs-4"></i>
+                            <select class=" form-control rounded" name="" id="">
+                                <option value="" disabled selected> <span class="shrot text-dark">Short Status:</span>
+                                </option>
+                                <option value=""> <span class="shrot text-dark">Short Status:</span>
+                                    Faol</option>
+                                <option value=""> <span class="shrot text-dark">Short Status:</span>
+                                    Faol emas</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="pt-4">
+                        <table class="w-100">
+                            <thead>
+                                <tr class="mb-5">
+                                    <th>F.I.O</th>
+                                    <th>Guruh</th>
+                                    <th>Telefon nomer</th>
+                                    <th>Email</th>
+                                    <th>Guruh</th>
+                                    <th>Status</th>
+                                </tr>
+                            </thead>
+                            <tbody id="users">
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="btn-toolbar mt-3 d-flex justify-content-end me-5 pe-1" role="toolbar"
+                        aria-label="Toolbar with button groups">
+                        <div class="btn-group me-2" role="group">
+                            <button type="button" class="btn btn-light">
+                                <i class="fa-sharp fa-solid fa-chevron-left"></i>
+                            </button>
+                        </div>
+                        <div class="btn-group me-2" role="group" aria-label="First group">
+                            <button type="button" class="btn btn-light btns" onclick="one()">1</button>
+                        </div>
+                        <div class="btn-group me-2" role="group" aria-label="Second group">
+                            <button type="button" class="btn btn-light btns" onclick="two()">2</button>
+                        </div>
+                        <div class="btn-group me-2" role="group" aria-label="Third group">
+                            <button type="button" class="btn btn-light btns" onclick="three()">3</button>
+                        </div>
+                        <div class="btn-group me-2" role="group" aria-label="Fourth group">
+                            <button type="button" class="btn btn-light btns" onclick="four()">4</button>
+                        </div>
+                        <div class="btn-group me-2" role="group">
+                            <button type="button" class="btn btn-light">
+                                <i class="fa-sharp fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./data.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>

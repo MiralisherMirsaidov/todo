@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAFBFF;
+    overflow-x: hidden;
+}
+
+input, select {
+    background-color: #F9FBFF !important;
+}
+
+.shrot {
+    color: #7E7E7E !important;
+}
+
+.left {
+    position: sticky;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    background-color: white;
+    text-align: end;
+}
+
+.menutext {
+    color: #9197B3;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.menutext:hover {
+    background-color: #5932EA;
+    color: white;
+    transition: 0.5s;
+
+}
+
+.main {
+    flex: 1;
+}
+
+.plus {
+    background-color: #7E7E7E;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.roundedrow {
+    box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+    border-radius: 30px;
+    display: flex;
+    align-items: center !important;
+    height: 150px;
+}
+
+.info {
+    color: #ACACAC;
+    line-height: 10px;
+}
+
+.rasm2 {
+    position: absolute;
+    left: 18px;
+}
+
+.rasm3 {
+    position: absolute;
+    left: 35px;
+}
+
+.rasm4 {
+    position: absolute;
+    left: 54px;
+}
+
+.rasm5 {
+    position: absolute;
+    left: 72px;
+}
+
+.box {
+    box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+    border-radius: 30px;
+}
+
+.start {
+    display: flex;
+    align-items: baseline;
+}
+
+.aykonsearch {
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: #7E7E7E;
+}
+
+table, th, td {
+    border-bottom: 1px solid #EEEEEE;
+    padding: 15px 0 !important;
+
+
+}
+
+th {
+    width: 300px !important;
+    color: #B5B7C0;
+}
+
+.badgeSucsess {
+    background-color: #16C09861;
+    border: 1px solid #00B087;
+    width: 80px;
+}
+
+.badgeDanger {
+    background-color: #FFC5C5;
+    border: 1px solid #DF0404;
+    width: 80px;
+
+}
+
+.btn-group {
+    background-color: yellow !important;
+}
+
+.btns:active {
+    background-color: #5932EA !important;
+    color: white !important;
+}
