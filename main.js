@@ -13,7 +13,7 @@ function makeCard(param, index) {
         <td>${arr.phoneNumber}</td> 
         <td>${arr.email}</td> 
         <td>${arr.groupName}</td> 
-        <td><span class="badge ${arr.status && `badgeSucsess` || `badgeDanger`}">
+        <td><span class="badge ${arr.status ? `badgeSucsess` : `badgeDanger`}">
         ${arr.status && `Active` || `Inactive`}
         </span></td> 
         </tr>
